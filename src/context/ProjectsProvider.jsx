@@ -407,7 +407,6 @@ const ProjectsProvider = ({ children }) => {
 
     // Socket.io
     const submitTasksProject = (task) => {
-        // Add the task to state
         const productUpdated = { ...project };
         productUpdated.tasks = [...productUpdated.tasks, task];
         setProject(productUpdated);
